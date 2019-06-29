@@ -52,3 +52,12 @@ $background_opa: 0.8;
     @content;
   }
 }
+
+// Set text color
+@function set_text_color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
