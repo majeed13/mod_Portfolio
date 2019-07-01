@@ -29,7 +29,7 @@ h3 {
   &.sm_heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary_color, 2), 0.5);
+    background: rgba(lighten($primary_color, 10), 0.5);
   }
 }
 
@@ -91,6 +91,9 @@ main {
 }
 
 .bio {
+  p {
+    margin: 0;
+  }
   grid-area: bio;
   font-size: 1.3rem;
 }
@@ -129,6 +132,9 @@ main {
   h6 {
     margin-top: 0.3rem;
     margin-bottom: 0.7rem;
+  }
+
+  span.italic {
     font-style: italic;
   }
 }
@@ -186,6 +192,33 @@ main {
   background: darken($primary_color, 10);
   color: set_text_color($primary_color);
   height: 60px;
+}
+
+// Contact Me Pg
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+
+  div {
+    font-size: 1.5rem;
+    border: 3px $secondary_color solid;
+    padding: 1.5rem 2.5rem;
+    margin: 1.5rem;
+    @include easeOut;
+
+    &:hover {
+      border: 5px #fff dotted;
+      padding: 1rem 2rem;
+      background: $secondary_color;
+      color: set_text_color($secondary_color);
+      span {
+        color: set_text_color($secondary_color);
+      }
+    }
+  }
 }
 
 @import "mobile";
