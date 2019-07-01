@@ -55,7 +55,7 @@
     .menu_branding .pic {
       width: 250px;
       height: 250px;
-      background: url("../img/LinkedIn.jpg");
+      background: url("../img/profile_pic.jpg");
       background-size: cover;
       opacity: 1;
       border-radius: 50%;
@@ -103,7 +103,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg_img {
-    background: url(../img/back1.jpg);
+    background: url(../img/background.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg_img .overlay {
@@ -206,6 +206,7 @@ main {
     font-style: italic; }
 
 .projects {
+  margin: 4rem;
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }
