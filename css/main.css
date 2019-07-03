@@ -336,6 +336,11 @@ span.italic {
     align-items: center;
     text-align: center; }
     main .lg_heading {
+      font-size: 4rem;
+      line-height: 1;
+      margin-bottom: 1rem; }
+    main .sm_heading {
+      font-size: 1.2rem;
       line-height: 1;
       margin-bottom: 1rem; }
   ul.menu_nav,
@@ -360,7 +365,9 @@ span.italic {
     grid-template-areas: "bio_pic" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .btn, .btn_light, .btn_dark, .download_btn {
+    font-size: 0.8rem; } }
 
 @media screen and (max-width: 600px) {
   main#home h1 {
