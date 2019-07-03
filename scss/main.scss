@@ -30,6 +30,7 @@ h3 {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(darken($primary_color, 25), 0.5);
+    width: 90%;
   }
 }
 
@@ -227,6 +228,23 @@ span.italic {
   text-align: center;
 }
 
+.download_btn {
+  @extend .btn;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 1rem;
+  background: $secondary_color;
+  color: set_text_color($secondary_color);
+  border: $secondary_color 1px solid;
+  width: 130px;
+  &:hover {
+    color: set_text_color($primary_color);
+    background: $primary_color;
+    @include easeOut;
+  }
+}
+
 #main {
   text-align: center;
   padding: 1rem;
@@ -251,12 +269,21 @@ span.italic {
     margin: 1.5rem;
     @include easeOut;
 
+    a {
+      cursor: pointer;
+      widows: 100%;
+      height: 100%;
+    }
+
     &:hover {
       border: 5px rgb(255, 230, 0) dotted;
       padding: 1rem 2rem;
       background: $secondary_color;
       color: set_text_color($secondary_color);
       span {
+        color: set_text_color($secondary_color);
+      }
+      a {
         color: set_text_color($secondary_color);
       }
     }
