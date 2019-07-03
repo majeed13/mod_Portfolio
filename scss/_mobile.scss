@@ -21,6 +21,12 @@
     text-align: center;
 
     .lg_heading {
+      font-size: 4rem;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+    .sm_heading {
+      font-size: 1.2rem;
       line-height: 1;
       margin-bottom: 1rem;
     }
@@ -67,6 +73,10 @@
   // PROJECTS
   .projects {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .btn {
+    font-size: 0.8rem;
   }
 }
 
