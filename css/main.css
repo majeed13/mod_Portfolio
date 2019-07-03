@@ -367,6 +367,8 @@ span.italic {
   .projects {
     grid-template-columns: repeat(2, 1fr); }
   .btn, .btn_light, .btn_dark, .download_btn {
+    font-size: 0.8rem; }
+  .boxes div {
     font-size: 0.8rem; } }
 
 @media screen and (max-width: 600px) {
