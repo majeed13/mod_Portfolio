@@ -114,10 +114,10 @@
   .nav_link {
     display: inline-block;
     position: relative;
-    font-size: 30px;
+    font-size: 50px;
+    font-weight: 400;
     text-transform: uppercase;
     padding: 1rem 0;
-    font-weight: 300;
     color: set_text_color($primary_color);
     text-decoration: none;
     @include easeOut;

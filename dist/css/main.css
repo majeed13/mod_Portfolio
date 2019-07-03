@@ -9,7 +9,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: #000;
     transition: all 0.5s ease-out; }
   .menu_btn.close {
     transform: rotate(180deg); }
@@ -40,14 +40,14 @@
   .menu_nav {
     margin: 0;
     padding: 0;
-    background: #111111;
+    background: #818181;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu_nav.show {
       transform: translate3d(0, 0, 0); }
   .menu_branding {
-    background: #444;
+    background: #b4b4b4;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu_branding.show {
@@ -59,26 +59,26 @@
       background-size: cover;
       opacity: 1;
       border-radius: 50%;
-      border: solid 3px #eece1a; }
+      border: solid 3px #710094; }
   .menu .nav_item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav_item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav_item.current > a {
-      color: #eece1a; }
+      color: #710094; }
   .menu .nav_link {
     display: inline-block;
     position: relative;
-    font-size: 30px;
+    font-size: 50px;
+    font-weight: 400;
     text-transform: uppercase;
     padding: 1rem 0;
-    font-weight: 300;
-    color: #fff;
+    color: #000;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav_link:hover {
-      color: #eece1a; }
+      color: #710094; }
 
 .nav_item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -96,8 +96,8 @@
   box-sizing: border-box; }
 
 body {
-  background: #444;
-  color: #fff;
+  background: #b4b4b4;
+  color: #000;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -112,7 +112,7 @@ body {
       right: 0;
       width: 100%;
       height: 100%;
-      background: rgba(68, 68, 68, 0.8);
+      background: rgba(180, 180, 180, 0.8);
       z-index: -1; }
 
 h1,
@@ -129,10 +129,10 @@ h3 {
   h3.sm_heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(94, 94, 94, 0.5); }
+    background: rgba(116, 116, 116, 0.5); }
 
 a {
-  color: #fff;
+  color: #000;
   text-decoration: none; }
 
 header {
@@ -141,7 +141,8 @@ header {
   width: 100%; }
 
 .text_secondary {
-  color: #eece1a; }
+  font-weight: bold;
+  color: #710094; }
 
 main {
   padding: 4rem;
@@ -151,12 +152,15 @@ main {
     main .icons a {
       padding: 0.7rem; }
       main .icons a:hover {
-        color: #eece1a;
+        color: #710094;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+
+span.italic {
+  font-style: italic; }
 
 .about_info {
   display: grid;
@@ -170,30 +174,59 @@ main {
   grid-area: bio_pic;
   margin: auto;
   border-radius: 50%;
-  border: #eece1a 3px solid; }
+  border: #710094 3px solid; }
+
+.uw_logo {
+  width: 150px;
+  height: 150px;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  display: block; }
+
+.sho {
+  width: 230px;
+  height: 130px;
+  margin-top: 1.2rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
 
 .bio {
   grid-area: bio;
   font-size: 1.3rem; }
   .bio p {
+    font-size: 17px;
     margin: 0; }
 
 .job_1 {
   grid-area: job1; }
+  .job_1 li {
+    font-size: 15px;
+    list-style: none; }
 
 .job_2 {
   grid-area: job2; }
+  .job_2 li {
+    font-size: 14px;
+    list-style: none; }
+
+#inner {
+  font-size: 12px;
+  list-style: circle; }
 
 .job_3 {
   grid-area: job3; }
 
 .job {
-  background: #515151;
+  background: #cecece;
   padding: 0.5rem;
-  border-bottom: #eece1a 4px solid;
-  border-right: #eece1a 4px solid; }
+  border-bottom: #710094 4px solid;
+  border-right: #710094 4px solid; }
   .job p {
-    margin-top: 1px; }
+    margin-top: 1px;
+    margin-bottom: 1px; }
   .job h3 {
     margin-bottom: 0; }
   .job h5 {
@@ -202,21 +235,23 @@ main {
   .job h6 {
     margin-top: 0.3rem;
     margin-bottom: 0.7rem; }
-  .job span.italic {
-    font-style: italic; }
 
 .projects {
   margin: 4rem;
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }
+  .projects h2 {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bolder; }
   .projects img {
     width: 100%;
-    border: 3px #fff solid;
+    border: 2px #710094 solid;
     background: #fff; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #eece1a;
+      border-color: #710094;
       transition: all 0.5s ease-out; }
 
 .btn, .btn_light, .btn_dark {
@@ -225,25 +260,25 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn_light:hover, .btn_dark:hover {
-    background: #eece1a;
-    color: #000;
+    background: #710094;
+    color: #fff;
     transition: all 0.5s ease-out; }
 
 .btn_light {
-  background: #dddddd;
+  background: white;
   color: #333;
   text-align: center; }
 
 .btn_dark {
-  background: black;
+  background: #1b1b1b;
   color: #fff;
   text-align: center; }
 
 #main {
   text-align: center;
   padding: 1rem;
-  background: #2b2b2b;
-  color: #fff;
+  background: #818181;
+  color: #000;
   height: 60px; }
 
 .boxes {
@@ -253,28 +288,29 @@ main {
   align-items: center;
   margin-top: 1rem; }
   .boxes div {
+    align-content: center;
     font-size: 1.5rem;
-    border: 3px #eece1a solid;
+    border: 3px #710094 solid;
     padding: 1.5rem 2.5rem;
     margin: 1.5rem;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
-      border: 5px #fff dotted;
+      border: 5px #ffe600 dotted;
       padding: 1rem 2rem;
-      background: #eece1a;
-      color: #000; }
+      background: #710094;
+      color: #fff; }
       .boxes div:hover span {
-        color: #000; }
+        color: #fff; }
 
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(5, 1fr); } }
 
-@media screen and (min-width: 769px) and (max-width: 1170px) {
+@media screen and (min-width: 840px) and (max-width: 1170px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 839px) {
   main {
     align-items: center;
     text-align: center; }
@@ -305,7 +341,7 @@ main {
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   main#home h1 {
     margin-top: 10vh; }
   .projects {
