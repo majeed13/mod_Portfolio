@@ -381,6 +381,6 @@ span.italic {
   .projects {
     grid-template-columns: 1fr; }
   ul.menu_nav .nav_link {
-    font-size: 1rem;
+    font-size: 1.9rem;
     padding: 0;
     margin: auto; } }
