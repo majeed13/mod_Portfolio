@@ -70,7 +70,7 @@
   .menu .nav_link {
     display: inline-block;
     position: relative;
-    font-size: 50px;
+    font-size: 48px;
     font-weight: 400;
     text-transform: uppercase;
     padding: 1rem 0;
@@ -348,15 +348,19 @@ span.italic {
     float: none;
     width: 100%;
     min-height: 0; }
+    ul.menu_nav .nav_link,
+    div.menu_branding .nav_link {
+      font-size: 1.6rem;
+      padding: 0.4rem; }
     ul.menu_nav.show,
     div.menu_branding.show {
       transform: translate3d(0, 0, 0); }
   .menu_nav {
-    height: 75vh;
+    height: 65vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px; }
   .menu_branding {
-    height: 25vh;
+    height: 35vh;
     transform: translate3d(100%, 0, 0); }
     .menu_branding .pic {
       width: 150px;
@@ -375,4 +379,8 @@ span.italic {
   main#home h1 {
     margin-top: 10vh; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  ul.menu_nav .nav_link {
+    font-size: 1rem;
+    padding: 0;
+    margin: auto; } }
