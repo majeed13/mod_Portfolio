@@ -73,7 +73,7 @@
     font-size: 48px;
     font-weight: 400;
     text-transform: uppercase;
-    padding: 1rem 0;
+    padding: 0;
     color: #000;
     text-decoration: none;
     transition: all 0.5s ease-out; }
@@ -238,7 +238,7 @@ span.italic {
     margin-bottom: 0.7rem; }
 
 .projects {
-  margin: 4rem;
+  margin: auto;
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }
@@ -325,7 +325,7 @@ span.italic {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(5, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (min-width: 840px) and (max-width: 1170px) {
   .projects {
@@ -350,7 +350,7 @@ span.italic {
     min-height: 0; }
     ul.menu_nav .nav_link,
     div.menu_branding .nav_link {
-      margin: auto;
+      display: block;
       font-size: 2.5rem;
       padding: 0.4rem; }
     ul.menu_nav.show,
